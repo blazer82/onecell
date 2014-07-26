@@ -21,7 +21,7 @@ Now we're gonna initialize the collection with some initial values if it's still
 
 
 ### Proposals and categories
-This is the collection to hold all the Proposals
+This is the collection to hold all the proposals
 
 	ProposalCollection = new Meteor.Collection "proposals"
 
