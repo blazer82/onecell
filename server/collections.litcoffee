@@ -46,3 +46,25 @@ We're setting initial catgeories if there are none defined yet.
 			key: "charta"
 			name: "Charta/Purpose"
 			description: "Proposals concerning the purpose of the system"
+
+
+### Inventory
+The collection which will hold our inventory
+
+	InventoryCollection = new Meteor.Collection "inventory"
+
+
+### Features
+Features will be enabled by specific goals.
+
+	FeaturesCollection = new Meteor.Collection "features"
+
+We've got one initial feature, the voting mechanism, that is going to be enabled by a certain amount of users.
+
+	unless FeaturesCollection.find().count()
+		FeaturesCollection.insert
+			key: "voting"
+			name: "Voting"
+			description: "This feature enables the voting mechanism as soon as the system reaches 100 registered users."
+			requires:
+				userAmount: 100
