@@ -1,6 +1,6 @@
 # Collections
 
-Here is where we're gonna set up all our mongodb collecitons.
+Here is where we're gonna set up all our mongodb collections.
 
 ### System's parameters collection
 First we would need a system's parameters collection.
