@@ -17,5 +17,8 @@ And now the seperate routes.
 		@route "proposals",
 			path: "/p"
 
+		@route "features",
+			path: "/f"
+
 		@route "about",
 			path: "about"
