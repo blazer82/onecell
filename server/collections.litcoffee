@@ -21,7 +21,7 @@ Now we're gonna initialize the collection with some initial values if it's still
 
 
 ### Proposals and categories
-This is the collection to hold all the proposals
+This is the collection to hold all the proposals.
 
 	ProposalCollection = new Meteor.Collection "proposals"
 
@@ -29,7 +29,7 @@ Proposals are organized by a single hierarchy of categories stored in another co
 
 	CatgeoriesCollection = new Meteor.Collection "categories"
 
-We're setting initial catgeories if none defined yet.
+We're setting initial catgeories if there are none defined yet.
 
 	unless CatgeoriesCollection.find().count()
 		CatgeoriesCollection.insert
